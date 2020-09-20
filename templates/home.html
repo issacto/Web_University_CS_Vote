@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+<p> Vote!</p>
+<form action="{{url_for('home')}}", method ="post">
+    {{form.csrf_token()}}
+    {{ form.title.label }}
+    {{form.title}}
+    {{ form.comment.label }}
+    {{form.comment}}
+    {{form.submit}}
+</form>
+
+{% if title %}
+
+<h1>{{title}}</h1>
+{% endif %}
+{% endblock  %} 

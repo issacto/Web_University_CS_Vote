@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+
+<ul>
+    {% for task in tasks %}
+    <li>{{task.title}} 
+        <br>           
+        {% if task.comment %}
+          Comment: {{task.comment}}
+        <br>
+        {% endif %}
+        <br>
+    </li>
+    
+    {% endfor %}
+</ul>
+{% endblock  %} 

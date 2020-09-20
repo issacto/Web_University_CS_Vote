@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+
+<h3>Have you ever wondered which university has the best CS program? 
+    <br>
+    <br>
+    Come and Vote!
+</h3>
+<p><a href="{{ url_for('home') }}">Click and Vote</a></p>
+<p><a href="{{ url_for('index') }}">View Ranking</a></p>
+
+
+<link rel="stylesheet" href="/static/style.css">
+<div class="flex-container">
+    <div>
+        <img src="{{url_for('static', filename='Images/IU.jpg',align= 'middle')}}" />
+    <div>
+</div>
+
+
+
+{% endblock  %} 
