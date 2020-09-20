@@ -1,6 +1,6 @@
 # Web_University_CS_Vote
 
-### Tool used
+### Tools used
 Python Flask, SQLAlchemy, Docker
 
 ### Objective
